@@ -1,0 +1,15 @@
+name: Docs Check
+on:
+  pull_request:
+    paths:
+      - '**/*.md'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check README sections
+        run: |
+          grep -q "## Vision" README.md
+          grep -q "## Mission" README.md
+          grep -q "## Contributing" README.md

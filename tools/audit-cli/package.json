@@ -1,0 +1,14 @@
+{
+  "name": "ethical-ai-audit-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint .",
+    "test": "node --test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
